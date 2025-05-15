@@ -19,7 +19,7 @@ const Hero = () => {
       {/* Main background image with parallax effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-10 transition-transform duration-1000 hover:scale-105"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1746972170275-53dd382e49af?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60')" }}
       ></div>
       
       <div className="container relative z-10 px-4 py-20 md:py-32">
@@ -27,7 +27,7 @@ const Hero = () => {
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-theme-600 mb-6 leading-tight">
             <span className="inline-block animate-enter" style={{animationDelay: '0.1s'}}>Social Media Use</span> <span className="inline-block animate-enter" style={{animationDelay: '0.3s'}}>and Mental Health</span> <span className="inline-block animate-enter" style={{animationDelay: '0.5s'}}>in Adolescents</span>
           </h1>
-          
+        
           <p className="text-xl md:text-2xl text-gray-600 mb-10 animate-enter" style={{animationDelay: '0.7s'}}>
             Understanding the impact of social media on young people's mental well-being: 
             opportunities, risks, and recommendations.
