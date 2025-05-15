@@ -1,5 +1,5 @@
 
-import { ThumbsUp, ThumbsDown, Calendar, Star, ArrowUp, School } from "lucide-react";
+import { ThumbsUp, ThumbsDown, Calendar, Star, ArrowUp, School, Users, BookOpen, MessageCircle } from "lucide-react";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import KeyStats from "@/components/KeyStats";
