@@ -1,56 +1,60 @@
 
-import { Book } from "lucide-react";
+import { Book, Mail, ExternalLink } from "lucide-react";
 
 const Footer = () => {
-  const currentYear = new Date().getFullYear();
-  
   return (
-    <footer className="bg-theme-600 text-white pt-12 pb-6">
+    <footer className="bg-gray-900 text-gray-200 py-12">
       <div className="container px-4">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4 mb-12">
-          <div>
-            <div className="flex items-center space-x-2 mb-4">
-              <Book className="h-6 w-6" />
-              <span className="font-bold text-lg">Social Media & Mental Health</span>
+        <div className="grid gap-8 md:grid-cols-3">
+          <div className="space-y-4">
+            <div className="flex items-center gap-2">
+              <Book className="h-6 w-6 text-theme-300" />
+              <span className="font-bold text-xl text-theme-300">Social Media & Mental Health</span>
             </div>
-            <p className="text-theme-100 text-sm">
-              An educational resource based on systematic review research examining the impact of social media on adolescent mental health.
+            <p className="text-gray-400 max-w-sm">
+              A systematic review of the impact of social media use on adolescent mental health, examining both positive and negative effects.
             </p>
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Key Topics</h3>
+            <h3 className="text-lg font-semibold text-theme-300 mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#introduction" className="text-theme-100 hover:text-white transition-colors">Introduction</a></li>
-              <li><a href="#positive-effects" className="text-theme-100 hover:text-white transition-colors">Positive Effects</a></li>
-              <li><a href="#negative-effects" className="text-theme-100 hover:text-white transition-colors">Negative Effects</a></li>
-              <li><a href="#recommendations" className="text-theme-100 hover:text-white transition-colors">Recommendations</a></li>
+              <li>
+                <a href="#introduction" className="text-gray-400 hover:text-theme-300 transition-colors">Introduction</a>
+              </li>
+              <li>
+                <a href="#positive-effects" className="text-gray-400 hover:text-theme-300 transition-colors">Positive Effects</a>
+              </li>
+              <li>
+                <a href="#negative-effects" className="text-gray-400 hover:text-theme-300 transition-colors">Negative Effects</a>
+              </li>
+              <li>
+                <a href="#recommendations" className="text-gray-400 hover:text-theme-300 transition-colors">Recommendations</a>
+              </li>
             </ul>
           </div>
           
           <div>
-            <h3 className="font-semibold text-lg mb-4">Resources</h3>
-            <ul className="space-y-2">
-              <li><a href="#" className="text-theme-100 hover:text-white transition-colors">Mental Health Support</a></li>
-              <li><a href="#" className="text-theme-100 hover:text-white transition-colors">Digital Wellbeing Tools</a></li>
-              <li><a href="#" className="text-theme-100 hover:text-white transition-colors">For Parents</a></li>
-              <li><a href="#" className="text-theme-100 hover:text-white transition-colors">For Educators</a></li>
+            <h3 className="text-lg font-semibold text-theme-300 mb-4">Contact</h3>
+            <ul className="space-y-3">
+              <li className="flex items-center gap-2">
+                <Mail className="h-5 w-5 text-theme-300" />
+                <a href="mailto:anish.21scse1010057@galgotiasuniversity.edu.in" className="text-gray-400 hover:text-theme-300 transition-colors">
+                  anish.21scse1010057@galgotiasuniversity.edu.in
+                </a>
+              </li>
+              <li className="flex items-center gap-2">
+                <ExternalLink className="h-5 w-5 text-theme-300" />
+                <a href="https://www.galgotiasuniversity.edu.in" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-theme-300 transition-colors">
+                  Galgotias University
+                </a>
+              </li>
             </ul>
-          </div>
-          
-          <div>
-            <h3 className="font-semibold text-lg mb-4">Contact</h3>
-            <p className="text-theme-100 text-sm mb-2">
-              For more information about this research or to request educational materials.
-            </p>
-            <a href="mailto:research@example.com" className="text-theme-200 hover:text-white transition-colors">
-              research@example.com
-            </a>
           </div>
         </div>
         
-        <div className="border-t border-gray-700 pt-6 text-center text-sm text-theme-100">
-          <p>© {currentYear} Social Media & Mental Health Research. Based on systematic review by Vinay Dwivedi, Anish Dubey, and Deepanshi.</p>
+        <div className="mt-12 pt-6 border-t border-gray-800 text-center text-gray-400">
+          <p>© {new Date().getFullYear()} Department of Computer Science and Engineering, Galgotias University</p>
         </div>
       </div>
     </footer>

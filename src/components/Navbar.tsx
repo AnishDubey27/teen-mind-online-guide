@@ -2,6 +2,8 @@
 import { Book, MessageCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { useIsMobile } from "@/hooks/use-mobile";
+import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+import Resources from "@/components/Resources";
 
 const Navbar = () => {
   const isMobile = useIsMobile();
@@ -10,7 +12,7 @@ const Navbar = () => {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-gray-200">
       <div className="container flex justify-between items-center h-16 px-4 sm:px-6">
         <div className="flex items-center space-x-2">
-          <Book className="h-6 w-6 text-theme-400" />
+          <Book className="h-6 w-6 text-theme-400 animate-pulse" />
           <span className="font-bold text-lg text-theme-500">
             {isMobile ? "SM & MH" : "Social Media & Mental Health"}
           </span>
@@ -31,10 +33,17 @@ const Navbar = () => {
           </a>
         </div>
         
-        <Button variant="outline" className="hidden sm:flex items-center gap-2 border-theme-300 text-theme-500 hover:bg-theme-100">
-          <MessageCircle className="h-4 w-4" />
-          <span>Resources</span>
-        </Button>
+        <Dialog>
+          <DialogTrigger asChild>
+            <Button variant="outline" className="flex items-center gap-2 border-theme-300 text-theme-500 hover:bg-theme-100 animate-bounce-slow">
+              <MessageCircle className="h-4 w-4" />
+              <span>Resources</span>
+            </Button>
+          </DialogTrigger>
+          <DialogContent className="sm:max-w-[650px] max-h-[90vh] overflow-y-auto">
+            <Resources />
+          </DialogContent>
+        </Dialog>
       </div>
     </nav>
   );
