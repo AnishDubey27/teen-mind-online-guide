@@ -161,21 +161,21 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             <AnimatedSection delay="0.3s" className="overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
+                src="https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
                 alt="Technology and Adolescents" 
                 className="w-full h-64 object-cover hover:scale-110 transition-transform duration-700"
               />
             </AnimatedSection>
             <AnimatedSection delay="0.4s" className="overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
+                src="https://images.unsplash.com/photo-1710401668249-86419c202327?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
                 alt="Digital Communication" 
                 className="w-full h-64 object-cover hover:scale-110 transition-transform duration-700"
               />
             </AnimatedSection>
             <AnimatedSection delay="0.5s" className="overflow-hidden rounded-lg">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
+                src="https://plus.unsplash.com/premium_photo-1661587615032-fc754ae7ae48?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
                 alt="Social Media Usage" 
                 className="w-full h-64 object-cover hover:scale-110 transition-transform duration-700"
               />
