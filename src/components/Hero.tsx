@@ -54,7 +54,7 @@ const Hero = () => {
           
           <div className="mt-12 flex justify-center animate-fade-in" style={{animationDelay: '1.1s'}}>
             <img 
-              src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
+              src="https://images.unsplash.com/photo-1534330207526-8e81f10ec6fc?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60" 
               alt="Digital technology" 
               className="rounded-lg w-full max-w-lg h-auto shadow-xl transform transition-all duration-500 hover:scale-105 hover:rotate-1"
             />
